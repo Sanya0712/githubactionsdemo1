@@ -1,0 +1,8 @@
+name : demo5
+on : [push]
+
+jobs : 
+   secretcheck :
+      runs-on : windows-latest
+      steps : 
+      - run : echo "${{secrets.AMAZON_ID}}"
