@@ -1,0 +1,22 @@
+name : demo7
+on : [push]
+
+jobs :
+   check : 
+     runs-on : ubuntu-latest
+     steps : 
+     - name : check the code
+       uses : actions/checkoit@v2
+     - run : pyhton pyhtonapp.py
+   build : 
+     runs-on : ubunut-latest
+     needs : [check]
+     steps : 
+     - name : build the code
+       uses : actions/checkoit@v2
+     - uses : actions/upload-artifact@v2
+       with : 
+         name : my-artifact
+         path : .
+       
+     
