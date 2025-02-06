@@ -1,0 +1,12 @@
+name : demo6
+on : [push]
+
+jobs : 
+   artifactsupload :
+    runs-on : windows-latest
+    steps : 
+      - name : upload artifacts
+        uses : actions/upload-artifact@v2
+        with :
+          name : my first artifact
+          path : ./githubactionsdemo/
