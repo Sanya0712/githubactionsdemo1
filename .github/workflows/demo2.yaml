@@ -5,21 +5,17 @@ jobs :
   ubuntu:
       runs-on : ubuntu-latest
       steps: 
-      - name : ubuntu sys date print
       - run : date
   windows:
       runs-on : windows-latest
       steps : 
-      - name : ubuntu sys date print
       - run : date
   mac-os:
       runs-on : macos-latest
       steps : 
-       - name : ubuntu sys date print
-       - run  : date
+      - run  : date
   urchoice:
       runs-on : windows-latest
       needs : [ubuntu,windows,mac-os]
       steps : 
-       - name : ubuntu sys date print
-       - run : date
+      - run : date
