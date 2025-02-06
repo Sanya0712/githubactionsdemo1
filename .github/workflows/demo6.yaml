@@ -1,7 +1,6 @@
 name : demo6
 on : [push]
-env : 
-   ARTIFACT_NAME : myartifact
+
 jobs : 
    artifactsupload :
     runs-on : ubuntu-latest
@@ -11,5 +10,5 @@ jobs :
       - name : upload artifacts
         uses : actions/upload-artifact@v4
         with :
-          name : ${{env.ARTIFACT_Name}}
+          name : myartifact
           path : .
