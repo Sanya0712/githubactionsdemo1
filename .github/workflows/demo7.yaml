@@ -6,7 +6,7 @@ jobs :
      runs-on : ubuntu-latest
      steps : 
      - name : check the code
-       uses : actions/checkoit@v2
+       uses : actions/checkout@v2
      - run : pyhton pyhtonapp.py
    build : 
      runs-on : ubunut-latest
