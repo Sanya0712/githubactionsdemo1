@@ -1,0 +1,9 @@
+name : githubactiondemo1
+on : [push]
+jobs :
+    codevalidity:
+          runs-on : windows-latest
+          steps:
+          - name : checkcode
+          - uses : actions/checkout@v2
+          - run : echo "code is correct"
