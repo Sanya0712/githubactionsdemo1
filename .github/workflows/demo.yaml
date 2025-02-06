@@ -1,4 +1,4 @@
-name : githubactiondemo1
+name : demo1
 on : [push]
 jobs :
     codevalidity:
