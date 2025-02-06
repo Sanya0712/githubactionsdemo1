@@ -6,7 +6,7 @@ jobs :
     runs-on : windows-latest
     steps : 
       - name : upload artifacts
-        uses : echapmanFromBunnings/upload-artifact@3.0.0
+        uses : actions/upload-artifact@v2
         with :
           name : my first artifact
           path : .
