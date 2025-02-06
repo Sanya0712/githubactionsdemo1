@@ -7,4 +7,9 @@ jobs :
    secretcheck :
       runs-on : windows-latest
       steps : 
-      - run : echo "SECRET_ID"
+      - name : secret check
+        uses : actions/checkout@v2
+        with : 
+             AID : ${{secrets.AMAZON_ID}}
+          
+      - run : echo "cannot be shown bcs it secret "
