@@ -7,7 +7,7 @@ jobs :
      steps : 
      - name : check the code
        uses : actions/checkout@v2
-     - run : pyhton pyhtonapp.py
+     - run : python pythonapp.py
    build : 
      runs-on : ubunut-latest
      needs : [check]
