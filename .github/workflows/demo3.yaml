@@ -1,0 +1,11 @@
+name : demo3
+on : [push]
+
+jobs : 
+  checkpythoncode:
+     runs-on : windows-latest
+     steps : 
+     - name: Python Black20 Check
+       uses : ORTHOIN3D/python-black20-check@22.3.0
+       
+  
