@@ -3,7 +3,7 @@ on : [push]
 
 jobs : 
   checkpythoncode:
-     runs-on : windows-latest
+     runs-on : linux-latest
      steps : 
      - name: Python Syntax Checker
        uses: cclauss/Find-Python-syntax-errors-action@v0.2.0
