@@ -1,0 +1,13 @@
+name : demo4
+on : [push]
+env : 
+   env_var : "sanya here"
+
+jobs :
+  envvariable : 
+      runs-on : windows
+      steps : 
+      - uses : actions/checkout@v2
+      - run : ${{env.env_var}}
+  
+   
