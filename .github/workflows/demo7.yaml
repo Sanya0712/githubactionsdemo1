@@ -12,8 +12,7 @@ jobs :
      runs-on : ubunut-latest
      needs : [check]
      steps : 
-     - name : build the code
-       uses : actions/checkoit@v2
+     - uses : actions/checkout@v2
      - uses : actions/upload-artifact@v2
        with : 
          name : my-artifact
