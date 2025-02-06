@@ -1,8 +1,10 @@
 name : demo5
 on : [push]
+env  :
+   SECRET_ID : ${{secrets.AMAZON_ID}}
 
 jobs : 
    secretcheck :
       runs-on : windows-latest
       steps : 
-      - run : echo "${{secrets.AMAZON_ID}}"
+      - run : echo "SECRET_ID"
