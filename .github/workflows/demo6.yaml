@@ -9,4 +9,4 @@ jobs :
         uses : aochmann/actions-download-artifact@1.0.4
         with :
           name : my first artifact
-          path : "C:/Users/Sanya.Yadav/Documents"
+          path : .
